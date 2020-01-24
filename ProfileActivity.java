@@ -1,4 +1,5 @@
-package com.diserauto.loginapp;
+package com.diserauto.disertest;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -35,11 +36,13 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_profile);
 
         mEdit = findViewById(R.id.enter_messsge);
         sButton = findViewById(R.id.send_button);
+
         mRec = findViewById(R.id.messages);
+
         mRec.setLayoutManager(new LinearLayoutManager(this));
 
         final DataAdapter dataAdapter = new DataAdapter(this, messages);
