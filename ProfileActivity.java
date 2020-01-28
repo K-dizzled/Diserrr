@@ -52,7 +52,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String mss = mEdit.getText().toString();
-                if (mss.equals("")){
+                if (mss.trim().isEmpty()){
                     Toast.makeText(getApplicationContext(), "Не молчи",Toast.LENGTH_SHORT);
                     return;
                 }
